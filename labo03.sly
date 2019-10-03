@@ -37,7 +37,7 @@
         </multiplicity>
       </role>
     </association>
-    <entity entityType="CLASS" id="1" isAbstract="false" name="Ecoles" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="1" isAbstract="false" name="Ecole" visibility="PUBLIC"/>
     <entity entityType="CLASS" id="3" isAbstract="true" name="Individu" visibility="PUBLIC">
       <attribute const="false" defaultValue="" isStatic="false" name="nom" type="String" visibility="PRIVATE"/>
       <attribute const="false" defaultValue="" isStatic="false" name="prenom" type="String" visibility="PRIVATE"/>
