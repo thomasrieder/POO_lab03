@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Labo03 Bourqui - Rieder">
+    <association aggregation="NONE" direction="BIDIRECTIONAL" id="206" name="&lt;- est dans une">
+      <role componentId="5" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+      <role componentId="145" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+    </association>
+    <association aggregation="NONE" direction="BIDIRECTIONAL" id="146" name="contient -&gt;">
+      <role componentId="1" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+      <role componentId="145" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>4</min>
+          <max>4</max>
+        </multiplicity>
+      </role>
+    </association>
+    <entity entityType="CLASS" id="145" isAbstract="false" name="Maison" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="points" type="int" visibility="PRIVATE"/>
+    </entity>
+    <inheritance id="48">
+      <child>4</child>
+      <parent>3</parent>
+    </inheritance>
+    <inheritance id="47">
+      <child>5</child>
+      <parent>3</parent>
+    </inheritance>
+    <entity entityType="CLASS" id="5" isAbstract="false" name="Proffesseur" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="4" isAbstract="false" name="Eleve" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="anneeDetude" type="int" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="3" isAbstract="true" name="Individu" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="nom" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="prenom" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="dateNaissance" type="Date" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="1" isAbstract="false" name="Ecole" visibility="PUBLIC"/>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <relationView color="-12566464" relationId="47">
+      <line>
+        <point>
+          <x>1041</x>
+          <y>381</y>
+        </point>
+        <point>
+          <x>1041</x>
+          <y>301</y>
+        </point>
+        <point>
+          <x>1111</x>
+          <y>301</y>
+        </point>
+        <point>
+          <x>1111</x>
+          <y>241</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="48">
+      <line>
+        <point>
+          <x>1111</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>1261</x>
+          <y>301</y>
+        </point>
+        <point>
+          <x>1111</x>
+          <y>301</y>
+        </point>
+        <point>
+          <x>1111</x>
+          <y>241</y>
+        </point>
+      </line>
+    </relationView>
+    <relationView color="-12566464" relationId="146">
+      <line>
+        <point>
+          <x>461</x>
+          <y>271</y>
+        </point>
+        <point>
+          <x>621</x>
+          <y>271</y>
+        </point>
+      </line>
+      <labelAssociation>
+        <x>499</x>
+        <y>251</y>
+        <w>69</w>
+        <h>16</h>
+      </labelAssociation>
+      <roleAssociation>
+        <x>465</x>
+        <y>275</y>
+        <w>0</w>
+        <h>16</h>
+      </roleAssociation>
+      <roleAssociation>
+        <x>585</x>
+        <y>275</y>
+        <w>0</w>
+        <h>16</h>
+      </roleAssociation>
+      <multipliciteAssociation>
+        <x>465</x>
+        <y>249</y>
+        <w>8</w>
+        <h>16</h>
+      </multipliciteAssociation>
+      <multipliciteAssociation>
+        <x>607</x>
+        <y>249</y>
+        <w>8</w>
+        <h>16</h>
+      </multipliciteAssociation>
+    </relationView>
+    <relationView color="-12566464" relationId="206">
+      <line>
+        <point>
+          <x>961</x>
+          <y>401</y>
+        </point>
+        <point>
+          <x>771</x>
+          <y>291</y>
+        </point>
+      </line>
+      <labelAssociation>
+        <x>827</x>
+        <y>343</y>
+        <w>95</w>
+        <h>16</h>
+      </labelAssociation>
+      <roleAssociation>
+        <x>925</x>
+        <y>405</y>
+        <w>0</w>
+        <h>16</h>
+      </roleAssociation>
+      <roleAssociation>
+        <x>775</x>
+        <y>295</y>
+        <w>0</w>
+        <h>16</h>
+      </roleAssociation>
+      <multipliciteAssociation>
+        <x>947</x>
+        <y>379</y>
+        <w>8</w>
+        <h>16</h>
+      </multipliciteAssociation>
+      <multipliciteAssociation>
+        <x>779</x>
+        <y>275</y>
+        <w>8</w>
+        <h>16</h>
+      </multipliciteAssociation>
+    </relationView>
+    <componentView color="-2079" componentID="1" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>310</x>
+        <y>230</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="3" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>1030</x>
+        <y>140</y>
+        <w>150</w>
+        <h>100</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="4" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>1040</x>
+        <y>480</y>
+        <w>150</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="5" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>960</x>
+        <y>380</y>
+        <w>150</w>
+        <h>55</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="145" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>620</x>
+        <y>230</y>
+        <w>150</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+  </umlView>
+</classDiagram>
